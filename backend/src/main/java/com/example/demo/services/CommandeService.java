@@ -15,9 +15,16 @@ public class CommandeService {
 
     public CommandeService() {
 
+        String[] status = {
+                "en attente",
+                "en préparation",
+                "prête",
+                "servie"
+        };
+
         CommandeDTO c1 = new CommandeDTO(
                 1,
-                "Commande 1",
+                status[0],
                 Arrays.asList(
                         new ElementDTO(1, "Clavier", 49.99),
                         new ElementDTO(2, "Souris", 19.99)
@@ -26,7 +33,7 @@ public class CommandeService {
 
         CommandeDTO c2 = new CommandeDTO(
                 2,
-                "Commande 2",
+                status[1],
                 Arrays.asList(
                         new ElementDTO(3, "Écran", 199.99),
                         new ElementDTO(4, "Casque", 89.99)

@@ -5,7 +5,7 @@ import java.util.List;
 public class CommandeDTO {
 
 	private int id;
-	private String title;
+	private String status;
 	private List<ElementDTO> elements;
 	
 	public int getId() {
@@ -15,11 +15,11 @@ public class CommandeDTO {
 		this.id = id;
 	}
 	
-	public String getTitle() {
-		return title;
+	public String getStatus() {
+		return status;
 	}
-	public void setTitle(String title) {
-		this.title = title;
+	public void setStatus(String status) {
+		this.status = status;
 	}
 
 	public List<ElementDTO> getElements() {
@@ -29,9 +29,9 @@ public class CommandeDTO {
         this.elements = elements;
     }
 	
-	public CommandeDTO(int id, String title, List<ElementDTO> elements) {
+	public CommandeDTO(int id, String status, List<ElementDTO> elements) {
         this.id = id;
-        this.title = title;
+        this.status = status;
         this.elements = elements;
     }
 	
