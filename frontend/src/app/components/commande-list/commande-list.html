@@ -1,0 +1,13 @@
+<h2>Votre liste de Commande</h2>
+ 
+@if( !loading && commandes.length != 0 ) {
+    @for(commande of commandes; track commande.id) {
+        <div class="commande-item">
+            <h3>n°{{commande.id }} - {{ commande.status }}</h3>
+        </div>
+    }
+} @else if( loading) {
+    <p>Chargement...</p>
+} @else {
+    <p >Soit la liste des notes est vide, soit une erreur a été rencontrée lors du chargement :( </p>
+}

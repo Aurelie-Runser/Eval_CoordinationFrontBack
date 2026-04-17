@@ -2,7 +2,6 @@ import { Component, inject, OnInit } from '@angular/core';
 import { HomeTitle } from '../../models/home';
 import { HomeService } from '../../services/home.service';
 
-
 @Component({
   selector: 'app-home-title',
   imports: [],
