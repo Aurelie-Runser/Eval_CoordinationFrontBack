@@ -1,9 +1,18 @@
-<h2>Votre liste de Commande</h2>
+<h2>Vos Commandes</h2>
  
 @if( !loading && commandes.length != 0 ) {
     @for(commande of commandes; track commande.id) {
         <div class="commande-item">
             <h3>n°{{commande.id }} - {{ commande.status }}</h3>
+
+            <h4>Contenu :</h4>
+            <ul>
+                @for(element of commande.elements; track element.id) {
+                    <li>
+                        {{ element.quantity }} x {{ element.name }} ({{ element.price }}€)
+                    </li>
+                }
+            </ul>
         </div>
     }
 } @else if( loading) {

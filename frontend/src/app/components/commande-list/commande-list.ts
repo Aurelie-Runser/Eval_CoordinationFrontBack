@@ -22,6 +22,7 @@ export class CommandeList {
         next: (commandes) => {
           this.commandes = commandes
           this.loading = false
+          console.log(commandes)
         },
         error: (err: unknown) => {
           console.error("erreur api :", err)

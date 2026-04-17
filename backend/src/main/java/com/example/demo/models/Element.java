@@ -1,10 +1,11 @@
-package com.example.demo.dtos;
+package com.example.demo.models;
 
-public class ElementDTO {
+public class Element {
 
 	private int id;
 	private String name;
 	private double price;
+	
 	
 	public int getId() {
 		return id;
@@ -26,7 +27,7 @@ public class ElementDTO {
 		this.price = price;
 	}
 	
-	public ElementDTO(int id, String name, double price) {
+	public Element(int id, String name, double price) {
 		this.id = id;
 		this.name = name;
 		this.price = price;

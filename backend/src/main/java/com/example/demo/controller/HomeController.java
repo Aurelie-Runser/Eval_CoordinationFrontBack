@@ -3,7 +3,7 @@ package com.example.demo.controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.dtos.HomeResponse;
+import com.example.demo.models.HomeResponse;
 
 @RestController
 public class HomeController {
